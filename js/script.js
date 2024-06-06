@@ -102,10 +102,17 @@ colores.addEventListener("change", function(){
 
     if(colores.value == ""){
         contenedor.style.backgroundColor = "black"; //Si selecciona el valor vacío el fondo vuelve a negro
+        contenedor.style.border = "";        //Volvemos al estilo original
+        contenedor.style.borderRadius = "0"; //Volvemos al estilo original
+        contenedor.style.backgroundImage = "url(../img/favicon.png)";
     } else{
+        contenedor.style.backgroundImage = "none"; //Reseteamos la imagen de fonde del contenedor
         contenedor.style.backgroundColor = coloresRGB[colores.value];/* Como siempre está
         a la escucha de un cambio, cuando cambia recoge el valor seleccionado y se lo mete
         al color de fondo del contenedor*/
+        contenedor.style.border = "1px solid #fff";
+        contenedor.style.borderRadius = "35px";
+        // Aquí hacemos también algunos cambios de estilo del contenedor
     }
     
 });
