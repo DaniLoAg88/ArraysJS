@@ -44,5 +44,22 @@ for(i = 0; i < localidades.length; i++){
 }
 
 
+/**
+ *  CREAR ARRAY BIDIMENSIONAL (MATRIZ)
+ */
 
+//Crear el array bidimensional con valores random del 1 al 10
+//Crear 5 filas y 4 columnas
 
+let notas = new Array(5); //NOS CREA UN ARRAY BIDIMENSIONAL DE 5 FILAS (SIN COLUMNAS)
+
+for(let i = 0; i < 5; i++){
+
+    notas[i] = new Array(4); //NOS CREA EN LA FILA i UN ARRAY DE 4 COLUMNAS
+
+    for(let x = 0; x < 4; x++){
+        notas[i][x] = parseInt((Math.random() * 10) + 1);
+    }
+}
+
+console.log(notas);
