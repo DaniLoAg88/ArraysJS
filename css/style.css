@@ -12,3 +12,25 @@ body{
     margin: 0;
     padding: 0;
 }
+
+table,
+td{
+    border: 1px dotted darkorange;
+    border-collapse: collapse;
+    background-color: bisque;
+}
+
+table{
+    width: 40%;
+    margin: auto;
+}
+
+td{
+    padding: 25px;
+    text-align: center;
+}
+
+p,
+h2{
+    text-align: center;
+}
